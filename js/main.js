@@ -7,17 +7,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   if(wrapper.className.indexOf('skewed') != -1){
-    skew = 1000;
+    skew = 1010;
   
   }
   
   wrapper.addEventListener('mousemove', function(e){
-    detla = (e.clientX - window.innerWidth / 2) * 0.5;
-    // console.log(e.clientX);
-  
     handle.style.left = e.clientX + delta + 'px';
-
-    topLayer.style.width = e.clientX + skew + delta + 'px';
+    topLayer.style.width = e.clientX + skew + 'px';
   })
 
 });
